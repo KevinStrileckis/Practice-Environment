@@ -1,0 +1,35 @@
+**""**2.0
+Objects with Methods Two
+
+%&public class Growlithe
+%&{
+%&//	Private Instance Variables
+%&	_______ int heightInInches;
+%&	_______ double age;
+%&	_______ String name;
+%&//	Constructor
+%&	public Growlithe(int h, double a, String n) {
+%&		heightInInches = h;
+%&		age = a;
+%&		name = n;
+%&	}
+%&	
+%&	public void performMove(int move) {
+%&		if(move == 1)
+%&		{
+%&			System.out.print(name + " used Bite!");
+%&		}
+%&		else
+%&		{
+%&			System.out.print(name + " used Flame Wheel!");
+%&		}
+%&	}
+%&}
+
+$TOPpublic class Growlithe{private int heightInInches;private double age;private String name;public Growlithe(int h, double a, String n) {	heightInInches = h;age = a;name = n;}public void performMove(int move) {if(move == 1){System.out.print(name + " used Bite!");}else{System.out.print(name + " used Flame Wheel!");}}} $#
+
+
+%&//The definition of code reuse is reusing sections of code, templates, and methods. It is a key feature of object-oriented programming
+
+$TOPThe definition of code reuse is reusing sections of code, templates, and methods. It is a key feature of object-oriented programming $#Please write the definition above, word-for-word. Do not use a period or include the two slashes for a comment
+

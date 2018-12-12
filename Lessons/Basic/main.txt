@@ -1,0 +1,42 @@
+Main Method Header Run-Through
+
+%&public static void main(String[] args)
+%&{
+%&}
+$TOPpublic static void main(String[] args){} $#
+%&public static void main(String[] args)
+%&{
+%&}
+$TOPpublic static void main(String[] args){} $#
+%&public static void main(String[] args)
+%&{
+%&}
+$TOPpublic static void main(String[] args){} $#
+
+
+%&public static void ____(String[] args)
+%&{
+%&}
+$TOPpublic static void main(String[] args){} $#Replace the underscores with what is missing
+%&public static void ____(String[] ____)
+%&{
+%&}
+$TOPpublic static void main(String[] args){} $#Replace the underscores with what is missing
+%&public _____ void main(String[] ____)
+%&{
+%&}
+$TOPpublic static void main(String[] args){} $#Replace the underscores with what is missing
+
+
+%&______ static ____ main(String[] args)
+%&{
+%&}
+$TOPpublic static void main(String[] args){} $#Replace the underscores with what is missing
+%&______ static ____ main(______[] args)
+%&{
+%&}
+$TOPpublic static void main(String[] args){} $#Replace the underscores with what is missing
+%&______ static ____ main(String__ args)
+%&{
+%&}
+$TOPpublic static void main(String[] args){} $#Replace the underscores with what is missing

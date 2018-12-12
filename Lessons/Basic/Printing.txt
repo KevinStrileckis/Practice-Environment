@@ -1,0 +1,25 @@
+Print Commands Text Only
+
+%&System.out.print("Hello world");
+$TOPSystem.out.print("Hello world"); $#This statement prints "Hello world" without a new line
+%&System.out.print("Hello darkness");
+$TOPSystem.out.print("Hello darkness"); $#This statement prints "Hello darkness" without a new line
+
+%&System.out.print("Hello world\n");
+$TOPSystem.out.print("Hello world\n"); $#This statement prints "Hello world" with a new line
+%&System.___.print("Hello world\n");
+$TOPSystem.out.print("Hello world\n"); $#This statement prints "Hello world" with a new line. Fill in the blank with the correct command.
+%&_ystem.___.print("Hello world\n");
+$TOPSystem.out.print("Hello world\n"); $#This statement prints "Hello world" with a new line. Fill in the blank with the correct text.
+%&______.___.print(_______________);
+$TOPSystem.out.print("Hello darkness\n"); $#This statement prints "Hello darkness" with a new line. Fill in the blank with the correct text.
+
+%&System.___.println("Hello world\n");
+$TOPSystem.out.println("Hello world\n"); $#This statement prints "Hello world" with two new lines. Fill in the blank with the correct text.
+%&System.___._______("Hello world\n");
+$TOPSystem.out.println("Hello world\n"); $#This statement prints "Hello world" with two new lines. Fill in the blank with the correct text.
+
+%&Final problem!
+$TOPSystem.out.print("Hello world\n"); $#This statement prints "Hello world" with one new line, using the escape sequence. Fill in the correct code.
+%&ps I'm a liar ;) Here's one last problem
+$TOPSystem.out.print("Hello world\n"); $#This statement prints "Hello world" with one new line, using the escape sequence. Fill in the correct code.

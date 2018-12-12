@@ -1,0 +1,41 @@
+Conversions Number 1
+$PCC0MRandomize
+
+%&Given 15 in base 10
+$TOP1111 $#Convert to base 2
+
+%&Given 6 in base 10
+$TOP110 $#Convert to base 2
+
+%&Given 20 in base 10
+$TOP10100 $#Convert to base 2
+
+%&Given 104 in base 10
+$TOP1101000 $#Convert to base 2
+
+%&Given 212 in base 10
+$TOP11010100 $#Convert to base 2
+
+%&Given 348 in base 10
+$TOP101011100 $#Convert to base 2
+
+%&Given 126 in base 10
+$TOP1111110 $#Convert to base 2
+
+%&Given 26 in base 10
+$TOP11010 $#Convert to base 2
+
+%&Given 16 in base 10
+$TOP10000 $#Convert to base 2
+
+%&Given 256 in base 10
+$TOP100000000 $#Convert to base 2. Write down this number somewhere.
+
+%&Given 512 in base 10
+$TOP1000000000 $#Convert to base 2. Did you write down your last answer? You know that 256 times 2 is 512... Also, write down this answer
+
+%&Given 1024 in base 10
+$TOP10000000000 $#Convert to base 2. Getting it, yet?
+
+%&Given 100 in base 10
+$TOP1100100 $#Convert to base 2

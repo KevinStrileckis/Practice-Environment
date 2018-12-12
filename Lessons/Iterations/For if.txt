@@ -1,0 +1,73 @@
+For with Ifs
+
+%&for(int i=0; i<=12; ++i)
+%&{
+%&	if(i % 2 == 0)
+%&	{
+%&		System.out.print(i + " ");
+%&	}
+%&}
+
+$TOPfor(int i=0; i<=12; ++i){if(i % 2 == 0){System.out.print(i + " ");}} $#0 2 4 6 8 10 12
+
+
+%&public class Example01
+%&{
+%&  public static void main(String[] args)
+%&  {
+%&  	for(int i=4; i<9; ++i)
+%&	{
+%&		if(i % 2 == 0)
+%&		  System.out.print(i);
+%&		else
+%&		  System.out.print("-");
+%&	}
+%&  }
+%&}
+$TOPpublic class Example01{public static void main(String[] args){for(int i=4; i<9; ++i){if(i % 2 == 0)System.out.print(i);elseSystem.out.print("-");}}} $#4-6-8
+
+%&public static void ____(String[] args)
+%&{
+%&	int j = _;
+%&	for(___ i=4; i<8; ++i)
+%&	{
+%&		j = j + i;
+%&	}
+%&	if(j > 12)
+%&	{
+%&		System.___.println(j);
+%&	}
+%&}
+
+$TOPpublic static void main(String[] args){int j=0;for(int i=4; i<8; ++i){j = j + i;}if(j > 12){System.out.println(j);}} $#22
+
+
+%&public _____ ____ main(String[] args)
+%&{
+%&	int sum = 0;
+%&	___(int i=4; i<8; ++i)
+%&	{
+%&		sum = sum + i;
+%&	}
+%&	if(sum < 12)
+%&	{
+%&		System.out.println(sum);
+%&	}
+%&}
+
+$TOPpublic static void main(String[] args){int sum=0;for(int i=4; i<8; ++i){sum = sum + i;}if(sum < 12){System.out.println(sum);}} $#
+
+
+%&Use parameters 1->12, inclusive, print number with space only if even. Do not write class or main() method
+
+$TOPfor(int i=1; i<=12; ++i){if(i%2 == 0){System.out.print(i + " ");}} $#1 2 3 4 5 6 7 8 9 10 11 12
+
+
+%&Use parameters 4->13, exclusive, print number with space only if even, else, print a space. Do not write class or main() method. Do not write the second condition as an else if statement
+
+$TOPfor(int i=4; i<13; ++i){if(i % 2 == 0){System.out.print(i + " ");} else {System.out.print(" "); }} $#4  6  8  10  12
+
+
+%&Use parameters 13->19, inclusive, print number with space only if odd. Else print i+1 without a space. Do not write class or main() method. Do not write the second condition as an else if statement
+
+$TOPfor(int i=13; i<=19; ++i){if(i % 2 == 1){System.out.print(i + " ");} else {System.out.print(i+1);}} $#13 1515 1717 1919

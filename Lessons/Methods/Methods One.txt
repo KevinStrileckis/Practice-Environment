@@ -1,0 +1,64 @@
+Methods One (Version two because I left version one at home :( )
+
+%&public class IntroToMethods
+%&{
+%&	public static void main(String[] args)
+%&	{
+%&		printX();
+%&		printX();
+%&	}
+%&	
+%&	public static void printX()
+%&	{
+%&		System.out.print("X");
+%&	}
+%&}
+
+$TOPpublic class IntroToMethods{public static void main(String[] args){printX();printX();}public static void printX(){System.out.print("X");}} $#XX
+
+
+
+%&public class IntroToMethods
+%&{
+%&	public static void main(String[] args)
+%&	{
+%&		printX();
+%&		printY();
+%&		printX();
+%&	}
+%&	
+%&	public static void printX()
+%&	{
+%&		System.out.print("X");
+%&	}
+%&	public static void printY()
+%&	{
+%&		System.out.print("Y");
+%&	}
+%&}
+
+$TOPpublic class IntroToMethods{public static void main(String[] args){printX();printY();printX();}public static void printX(){System.out.print("X");}public static void printY(){System.out.print("Y");}} $#XYX
+
+
+
+%&//Last one! Promise.
+%&public class IntroToMethods
+%&{
+%&	public static void main(String[] args)
+%&	{
+%&		printXYYX();
+%&	}
+%&	
+%&	public static void printXYYX()
+%&	{
+%&		System.out.print("X");
+%&		printYY();
+%&		System.out.print("X");
+%&	}
+%&	public static void printYY()
+%&	{
+%&		System.out.print("YY");
+%&	}
+%&}
+
+$TOPpublic class IntroToMethods{public static void main(String[] args){printXYYX();}public static void printXYYX(){System.out.print("X");printYY();System.out.print("X");}public static void printYY(){System.out.print("YY");}} $#XYYX

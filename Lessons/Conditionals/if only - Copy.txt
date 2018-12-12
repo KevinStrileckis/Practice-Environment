@@ -1,0 +1,6 @@
+Conditionals 1
+
+%&if(x == y)
+%&{
+%&}
+$TOPif(x==y){} $#Statement executes if x equals y

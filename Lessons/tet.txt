@@ -1,0 +1,23 @@
+**3.0**
+General Algorithmic Thought One
+
+$PCC0M(CFM)
+%&//Produce a class that is named Fisherperson
+%&//This class:
+%&//	inherits from a class named Human
+%&//	implements from an interface named Employee
+%&//	has a constructor that intializes all of Human's variables
+%&//	Defines all of Employee's declared methods
+%&//Sound good? Well, I'll give you some code for it
+%&public class Fisherperson *X*X*extends Human implements Employee
+%&{
+%&   public Fisherperson(int timeLeftInHours, double weight, String name){
+%&      super(timeLeftInHours,*X*X*weight, name);
+%&   }
+%&   //The below method was declared in interface Employee (though not defined)
+%&   public void work (int hrs){
+%&      timeLeftInHours -= hrs;
+%&   }
+%&   //Other methods written but not shown
+%&}
+$TOPp $#You are not be able to see it, but Employee has this code written in it: public void work(int hrs);

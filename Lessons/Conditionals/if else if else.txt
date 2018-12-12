@@ -1,0 +1,93 @@
+Conditionals (No switch)
+
+%&if(x == y)
+%&{
+%&}
+%&else if(x > y) {}
+$TOPif(x==y){}else if(x > y) {} $#First statement executes if x equals y. Second only if x is greater
+
+%&if(x == y || x > y)
+%&{
+%&}
+%&else if(x > y) {} 
+$TOPif(x == y || x > y){}else if(x > y) {} $#First statement executes if x equals y or if x is greater than y
+
+%&if(x-4 > y || (x < y && y > 0 ))
+%&{
+%&}
+%&else if(x > y) {} 
+$TOPif(x-4 > y || (x < y && y > 0)){}else if(x > y) {} $#First statement executes if x minus four is greater than y or if x is less than y
+
+%&if(x != y)
+%&{
+%&}
+%&else if(x > y)
+%&{
+%&}
+$TOPif(x!=y){}else if(x > y) {} $#First statement executes if x does not equal y
+
+%&if(x != y && x > 0)
+%&{
+%&}
+%&else
+%&{
+%&}
+$TOPif(x != y && x > 0){}else {} $#First statement executes if x does not equal y AND x is positive
+
+%&if(x != y && x < 0)
+%&{
+%&}
+%&else
+%&{
+%&}
+$TOPif(x != y && x < 0){}else {} $#First statement executes if x does not equal y AND x is negative
+
+%&if(y != y)
+%&{
+%&}
+%&else
+%&{
+%&}
+$TOPif(y!=y){} else{}$#First statement never executes because y equals itself
+
+
+%&if(x == y || (x > 0 && y > 0) )
+%&{
+%&	if(x > z)
+%&	{
+%&		System.out.print("Hello");
+%&	}
+%&	else
+%&	{
+%&		System.out.print("darkness");
+%&	}
+%&}
+$TOPif(x == y || (x > 0 && y > 0) ){if(x>z){System.out.print("Hello");}else{System.out.print("darkness");}} $#If x equals y OR x and y are both positive, and x and y are greater than z, then "Hello"
+
+%&if(x != y || (x > 0 && y > 0) )
+%&{
+%&	if(x < z)
+%&	{
+%&	}
+%&	else if(x > z)
+%&	{
+%&	}
+%&	else
+%&	{
+%&	}
+%&}
+$TOPif(x != y || (x > 0 && y > 0) ){if(x<z){}else if(x > z){}else{}} $#If x is not equal to y OR x and y are both positive, then we enter into the nested if structure
+
+%&if(x != y || (x > 0 && y > 0) )
+%&{
+%&	if(x < z)
+%&	{
+%&	}
+%&	else if(x > z)
+%&	{
+%&	}
+%&	else
+%&	{
+%&	}
+%&}
+$TOPif(x != y || (x > 0 && y > 0) ){if(x<z){}else if(x > z){}else{}} $#If x is not equal to y OR x and y are both positive, then we enter into the nested if structure

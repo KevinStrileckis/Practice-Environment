@@ -1,0 +1,80 @@
+**3.0**
+Abstractions with Python
+
+
+
+
+$PCC0M(Change)
+%&#Copy the function below.
+#We will then use it to make a program more readable
+ 
+#This function calculates the volume of a sphere, given a radius
+def sphereVolume(r):
+%&	return math.pi * r * r * r * 4 / 3
+$TOP def sphereVolume(r):return math.pi * r * r * r * 4 / 3
+
+
+%&#In the code below:
+#  replace every usage of the sphere volume with a function call to our function
+#  as a reminder, our function was sphereVolume()
+#  make sure to pass it our radius parameter
+ 
+sphereRadius = 17
+#find volume of sphere
+sVolume1 = math.pi*sphereRadius*sphereRadius*sphereRadius*4/3
+ 
+sphereRadius = 7
+sVolume2 = math.pi*sphereRadius**3*4/3
+ 
+sphereRadius = 2
+sVolume3 = math.pi*sphereRadius*sphereRadius*sphereRadius*4/3
+%&print 'Our volumes are',sVolume1,',',sVolume2,', and',sVolume3
+$TOPsphereRadius = 17sVolume1 = sphereVolume(sphereRadius)sphereRadius = 7sVolume2 = sphereVolume(sphereRadius) sphereRadius = 2sVolume3 = sphereVolume(sphereRadius)print 'Our volumes are',sVolume1,',',sVolume2,', and',sVolume3 $#Our volumes are 20579.5262761 , 1436.75504024 , and 33.5103216383
+
+
+
+
+
+%&#So that was abstracting: Code becoming cleaner and easier to manage
+#Copy the below function to do it again
+ 
+#The function below gets the range of the numbers in a list that is three numbers long
+def get_range(lis):
+	minimum = lis[0]
+	if(minimum > lis[1]):
+		minimum = lis[1]
+	if(minimum > lis[2]):
+		minimum = lis[2]
+	maximum = lis[0]
+	if(maximum < lis[1]):
+		maximum = lis[1]
+	if(maximum < lis[2]):
+		maximum = lis[2]
+	return maximum - minimum
+ 
+%&#NOTE: using lis.sort() would be a much better way of writing this function
+$TOP def get_range(lis):minimum = lis[0]if(minimum > lis[1]):minimum = lis[1]if(minimum > lis[2]):	minimum = lis[2]	maximum = lis[0]if(maximum < lis[1]):maximum = lis[1]	if(maximum < lis[2]):	maximum = lis[2]	return maximum - minimum
+
+
+%&#In the code below, replace every usage of the extended formula for range with a function call
+ 
+#Get range of one List
+lis = [4, 5, 2]
+minimum = lis[0]
+if(minimum > lis[1]):
+	minimum = lis[1]
+if(minimum > lis[2]):
+	minimum = lis[2]
+maximum = lis[0]
+if(maximum < lis[1]):
+	maximum = lis[1]
+if(maximum < lis[2]):
+	maximum = lis[2]
+print maximum - minimum
+ 
+#TODO: Print range of two other Lists
+lis2 = [6, 7, 1]
+#Note to boss: I'm not rewriting that mess of conditionals. I quit.
+lis3 = [6,13, 54]
+#TODO: Print range of lis3
+$TOPlis = [4, 5, 2]print get_range(arr)lis2 = [6, 7, 1]print get_range(lis2)lis3 = [6,13, 54]print get_range(lis3) $#3 6 48

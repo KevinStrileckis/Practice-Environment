@@ -1,0 +1,73 @@
+**3.0**
+Two Dimensional Arrays
+
+
+
+
+$PCC0M(Change)
+%&//Declare a two dimensional array of Strings
+String[][] arrt;
+//Initialize that array to have 2 rows and 10 columns
+arrt = new String[2][10];
+//TODO: change the array to have 2 rows and 3 columns
+%& 
+$TOP String[][] arrt;arrt = new String[2][3];
+
+%&//TODO: change the array to be of type int
+int[][] arrt;
+//Initialize that array to have 2 rows and 10 columns
+arrt = new int[2][3];
+//Fill in the array
+arrt[0][0] = 1;
+arrt[0][1] = 2;
+arrt[0][2] = 3;
+arrt[1][0] = 7;
+arrt[1][1] = 8;
+arrt[1][2] = 9;
+%& 
+$TOP int[][] arrt;arrt = new int[2][3];arrt[0][0] = 1;arrt[0][1] = 2;arrt[0][2] = 3;arrt[1][0] = 7;arrt[1][1] = 8;arrt[1][2] = 9; $#**saveprev**
+
+$PCC0M(CFM)
+%&//These 2D arrays have many purposes: matrices, categorizing, etc.
+//Here's that second one:
+______[][] clothes = 
+     {
+      {"short sleeve", "long sleeve"},
+      {"dress pants", "jeans"},
+      {"dress socks", "non-dress socks"}
+     };
+%&//TODO: fill in the data type
+$TOP String[][] clothes =      {      {"short sleeve", "long sleeve"},      {"dress pants", "jeans"},      {"dress socks", "non-dress socks"}     }; 
+
+%&//These 2D arrays have many purposes: matrices, categorizing, etc.
+//Here's that second one:
+______[][] clothes = 
+     {
+      {"short sleeve", "long sleeve"},
+      {"dress pants", "jeans"},
+      {"dress socks", "non-dress socks"}
+     };
+for(int i=0; i < clothes.length; ++i){
+    for(int j=0; j < clothes[i]_______; ++j){
+	System.out.print(clothes[_][_] + ", ");
+    }
+}
+%&//TODO: fill in the data type and finish printing out the elements in our ArrayList
+$TOP String[][] clothes = {      {"short sleeve", "long sleeve"},      {"dress pants", "jeans"},      {"dress socks", "non-dress socks"}  };for(int i=0; i<clothes.length; ++i){    for(int j=0; j<clothes[i].length; ++j){	System.out.print(clothes[i][j] + ", ");    }} $#**saveprev**
+
+
+
+
+$PCC0M(Solve)
+%&//TODO: Declare and initialize a 2d array of doubles with 2 rows and 2 columns. Specify only the number of rows
+//TODO: the name of the array is arrt
+//TODO: After that, initialize the elements to the below matrix:
+//	4.5    9.8
+%&//	3.14   1.3333
+$TOPdouble[][] arrt = new double[2][]; arrt[0][0] = 4.5; arrt[0][1] = 9.8; arrt[1][0] = 3.14; arrt[1][1] = 1.3333;
+
+
+%&//TODO: Now print out that matrix using a nested for-loop structure
+//TODO: each element should be separated by a comma, do not worry about new lines
+%&//Your previous work has been kept for you
+$TOPdouble[][] arrt = new double[2][]; arrt[0][0] = 4.5; arrt[0][1] = 9.8; arrt[1][0] = 3.14; arrt[1][1] = 1.3333; for(int i=0; i<arrt.length; ++i){    for(int j=0; j<arrt[i].length; ++j){	System.out.print(arrt[i][j] + ", ");    }}  $#**saveprev**

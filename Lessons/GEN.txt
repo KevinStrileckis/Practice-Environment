@@ -1,0 +1,83 @@
+**3.0**
+General Algorithmic Thought One
+
+$PCC0M(R)
+%&public class BTR02
+%&{
+%&	public static void main(String[] args)
+%&	{
+%&		System.out.print("Hello world");
+%&//		//We could have used "println" to
+%&//		//  print with a newline
+%&	}
+%&}
+$TOPpublic class BTR02{public static void main(String[] args){System.out.print("Hello world");}} $#Hello world
+
+
+%&int[] numbers = new int[4];
+%&//Initialize the array one at a time
+%&numbers[0] = 1;
+%&numbers[1] = 2;
+%&numbers[2] = 3;
+%&numbers[3] = 4;
+
+
+
+%&for(int i=4; i<8; ++i)
+%&{
+%&	System.out.print(i + " ");
+%&}
+
+$TOPfor(int i=4; i<8; ++i){System.out.print(i + " ");} $#4 5 6 7
+
+%&for(int i=___; i<20; ++i)
+%&{
+%&	System.out.print(i + " ");
+%&}
+
+$TOPfor(int i=10; i<20; ++i){System.out.print(i + " ");} $#10 11 12 13 14 15 16 17 18 19
+
+
+
+%&public static void main(String[] args)
+%&{
+%&	printXYX();
+%&}
+%&public void printXYX()
+%&{
+%&	System.out.print("X");
+%&	printY();
+%&	System.out.print("X");
+%&}
+%&public void printY()
+%&{
+%&	System.out.println("Y");
+%&}
+
+$TOPpublic static void main(String[] args){printXYX();}public void printXYX(){System.out.print("X");printY();printY();System.out.print("X");}public void printY(){System.out.println("Y");} $#XYX
+
+
+
+
+
+
+$PCC0M(CO)
+%&//Here is an example of polymorphism
+%&public class Sardine extends Fish{
+%&//	//From the Fish class, we inherited these: variables length, name, and weight; methods swim and breathe.
+%&//	//As such, our fish will use the super constructor in its own constructor below
+%&	public Sardine(double l, double w, String n){
+%&		super(l, w, n);
+%&	}
+%&	
+%&}
+
+$TOPpublic class Sardine extends Fish{publicSardine(double l, double w, String n){super(l,w,n);}} $#Inheritance is the action of inheriting the variables and methods from another class. Polymorphism - the state of being two classes at once
+
+Interfaces 
+Abstract Classes
+
+$PCC0M(CF)
+$PCC0M(Change)
+$PCC0M(CFM)
+$PCC0M(Solve)

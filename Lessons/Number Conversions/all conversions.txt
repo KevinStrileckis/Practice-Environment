@@ -1,0 +1,67 @@
+Conversions All
+
+%&Given 15 in base 10
+$TOP17 $#Convert to base 8
+
+%&Given 16 in base 10
+$TOP20 $#Convert to base 8
+
+%&Given 16 in base 8
+$TOP14 $#Convert to base 10
+
+%&Given 20 in base 8
+$TOP16 $#Convert to base 10. Next, we're off to the races!
+
+%&Given 12 in base 16
+$STOP10010, 22, 18 $#Convert to base 2, then base 8, then base 10. Separate your answers by comma
+
+%&Given 22 in base 16
+$STOP100010, 42, 34 $#Convert to base 2, then base 8, then Separate your answers by comma
+
+%&Given 1F in base 16
+$STOP11111, 37, 31 $#Convert to base 2, then base 8, then Separate your answers by comma
+
+%&Given D in base 16
+$STOP1101, 15, 13 $#Convert to base 2, then base 8, then base 10. Separate your answers by comma
+
+%&Given C2 in base 16
+$STOP11000010, 302, 194 $#Convert to base 2, then base 8, then base 10. Separate your answers by comma
+
+%&Given CC in base 16
+$STOP314, 204 $#Convert to base 2, then base 8, then base 10. Separate your answers by comma
+
+%&Given 212 in base 10
+$STOP11010100, 324, D4 $#Convert to base 2, then base 8, then base 16. Separate your answers by comma
+
+%&Given 22 in base 10
+$STOP10110, 26, 16 $#Convert to base 2, then base 8, then base 16. Separate your answers by comma
+
+%&Given 100 in base 10
+$STOP1100100, 144, 64 $#Convert to base 2, then base 8, then base 16. Separate your answers by comma
+
+%&Given 110 in base 2
+$STOP6, 6, 6 $#Convert to base 8, then base 10, then base 16. Separate your answers by comma
+
+%&Given 101 in base 2
+$STOP5, 5, 5 $#Convert to base 8, then base 10, then base 16. Separate your answers by comma
+
+%&Given 100 in base 2
+$STOP4, 4, 4 $#Convert to base 8, then base 10, then base 16. Separate your answers by comma
+
+%&Given 1100 in base 2
+$STOP14, 12, C $#Convert to base 8, then base 10, then base 16. Separate your answers by comma
+
+%&Given 1101 in base 2
+$STOP15, 13, D $#Convert to base 8, then base 10, then base 16. Separate your answers by comma
+
+%&Given 1111 in base 2
+$STOP17, 15, F $#Convert to base 8, then base 10, then base 16. Separate your answers by comma
+
+%&Given 11111 in base 2
+$STOP37, 31, 1F $#Convert to base 8, then base 10, then base 16. Separate your answers by comma
+
+%&Given 21 in base 8
+$STOP10001, 17, 11 $#Convert to base 2, then base 10, then base 16. Separate your answers by comma
+
+%&Given 100 in base 8
+$STOP1000000, 64, 40 $#Convert to base 2, then base 10, then base 16. Separate your answers by comma

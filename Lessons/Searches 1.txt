@@ -1,0 +1,140 @@
+**3.0**
+Searches 1
+
+$PCC0M(R)
+%&//First, let's review ArrayLists
+%&//TODO: Declare and initialize an ArrayList of whole numbers. The ArrayList must be named lis.
+$TOPArrayList<Integer> lis = new ArrayList<Integer>(); $#
+
+
+%&//TODO: add the numbers 12, 14, and 19 to our ArrayList
+%&//
+$TOPArrayList<Integer> lis = new ArrayList<Integer>(); lis.add(12); lis.add(14); lis.add(19); $#**saveprev**
+
+%&//To remove an element from lis, we COULD access it with the index. Instead, we are going to have the program search through lis by making a new object
+//TODO: Remove the 19 from the ArrayList. Do this by using the .remove() method, giving it an argument of new Integer(19).
+%&//Recall that an argument is the stuff that goes between parentheses in a call (write that down!)
+$TOPArrayList<Integer> lis = new ArrayList<Integer>(); lis.add(12); lis.add(14); lis.add(19); lis.remove(new Integer(19)); $#**saveprev**
+
+
+
+$PCC0M(Change)
+%&//The below is technically correct and will make an appearance on tests (and the exam). I'd rather you still use the way I taught you to declare and initialize ArrayLists, though, in labs.
+ArrayList lis = new ArrayList();
+ 
+//Fill lis with random numbers between 0 and 99 (inclusive)
+for(int i=0; i<50; ++i)
+	lis.add( (int)(Math.random() * 100) );
+ 
+//Let's take a look at a sequential search.
+//Search for the number six.
+int query = 6;
+boolean flag = false;
+for(int i=0; i<50; ++i)
+{
+	if(lis.get(i) == query)
+	   flag = true;
+}
+//TODO: change the above loop so that it searches from elements i to the size of the list, rather than the constant number 50.
+ 
+%&//At this point, our flag tells us if we found our number or not
+$TOP ArrayList lis = new ArrayList();for(int i=0; i<50; ++i)lis.add( (int)(Math.random() * 100) );int query = 6;boolean flag = false;for(int i=0; i<lis.size(); ++i){if(lis.get(i) == query)flag = true;}
+
+
+
+$PCC0M(CFM)
+%&//Assume that we have an ArrayList named lis, which contains one hundred thousand random numbers.
+//TODO: write the code to perform a sequential search using a query of the number 72. 
+ 
+//Sequential search!
+int query = __;
+boolean flag = _____;
+for(int i=0; i<_____; ++i)
+{
+	if(lis.get(i) == query)
+	   flag = _____;
+%&}
+$TOPint query = 72;boolean flag = false;for(int i=0; i<lis.size(); ++i){	if(lis.get(i) == query)flag = true;}
+
+
+
+$PCC0M(Solve)
+%&//Assume that we have an ArrayList named lis, which contains one hundred thousand random numbers.
+%&//TODO: write the code to perform a sequential search using a query of the number 72. 
+
+$TOPint query = 72;boolean flag = false;for(int i=0; i<lis.size(); ++i){	if(lis.get(i) == query)flag = true;}
+
+
+
+
+
+
+
+
+$PCC0M(Change)
+%&//So far, we've been dealing with random, jumbled up Lists.
+//But what if we had an ArrayList of 500 elements, and did the below:
+Collections.sort(lis);
+//What is "Collections?" Something you don't need for this class. But hopefully you can puzzle out what that line above does (that's a key skill in programming)
+ 
+//Instead of doing the same search, we're going to take advantage of the fact that this List is sorted.
+//Binary Search!
+int query = 6;
+boolean flag = false;
+int high = 500;
+int low = 0;
+int medium;
+%&//TODO: change the high variable so that it starts at the size of the list minus one, rather than the constant that is there.
+$TOP Collections.sort(lis);int query = 6;boolean flag = false;int high = lis.size()-1;int low = 0;int medium;
+
+
+%&//Binary Search! (continued)
+int query = 6;
+boolean flag = false;
+int high = lis.size()-1;
+int low = 0;
+int medium;
+while(low <= high)
+{
+	medium = (high - low) / 2 + low;
+	if(lis.get(medium) > query)
+	   low = medium + 1;
+	else if(lis.get(medium) < query)
+	   high = medium - 1;
+	else
+	   flag = true;
+	//Each time we do this loop, check if the number at medium is bigger or smaller than our query. That determines which part of the List we can ignore
+%&}
+$TOP Collections.sort(lis);int query = 6;boolean flag = false;int high = lis.size()-1;int low = 0;int medium;while(low <= high){medium = (high - low) / 2 + low;if(lis.get(medium) > query)low = medium + 1;else if(lis.get(medium) < query)high = medium - 1;elseflag = true;} $#**saveprev**
+
+
+$PCC0M(CFM)
+%&//Assume that we have an ArrayList named lis, which contains one hundred thousand random numbers.
+//TODO: write the code to perform a sequential search using a query of the number 234. 
+//TODO: WRITE THIS ALGORITHM DOWN! I'M GOING TO HAVE YOU REWRITE IT IN THE NEXT PROBLEM
+ 
+int query = __;
+boolean flag = _____;
+int high = _____;
+int low = 0;
+int medium;
+while(low <= high)
+{
+	medium = (high - low) / 2 + low;
+	if(lis.get(medium) _ query)
+	   low = medium + 1;
+	else if(lis.get(medium) _ query)
+	   high = medium - 1;
+	else
+	   flag = true;
+	//Each time we do this loop, check which part of the List we can ignore
+%&}
+$TOPint query = 234;boolean flag = false;int high = lis.size()-1;int low = 0;int medium;while(low <= high){medium = (high - low) / 2 + low;if(lis.get(medium) > query)low = medium + 1;else if(lis.get(medium) < query)high = medium - 1;elseflag = true;}
+
+
+
+$PCC0M(Solve)
+%&//Assume that we have an ArrayList named lis, which contains one hundred thousand random numbers.
+%&//TODO: write the code to perform a binary search using a query of the number 72. 
+
+$TOPint query = 72;boolean flag = false;int high = lis.size()-1;int low = 0;int medium;while(low <= high){medium = (high - low) / 2 + low;if(lis.get(medium) > query)low = medium + 1;else if(lis.get(medium) < query)high = medium - 1;elseflag = true;}

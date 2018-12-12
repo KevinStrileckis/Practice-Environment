@@ -1,0 +1,92 @@
+Big Time Review
+
+%&public class BTR01
+%&{
+%&	public static void main(String[] args)
+%&	{
+%&		int counter = 0, sum = 0;
+%&		while(counter < 12)
+%&		{
+%&			sum += counter;
+%&			counter++;
+%&		}
+%&	}
+%&}
+$TOPpublic class BTR01{public static void main(String[] args){int sumOfI = 0;for(int i=0; i<22; ++i){sumOfI = sumOfI + i;}}} $#
+
+%&public static void main(String[] args)
+%&{
+%&	int[] numbers = new int[15];
+%&	//Initialize with a for loop. Get all numbers 0-14
+%&	for(int i=0; i < numbers.length; ++i)
+%&	{
+%&		numbers[i] = i;
+%&	}
+%&	System.out.print(numbers[___];
+%&}
+
+$TOPpublic static void main(String[] args){int[] numbers = new int[15];for(int i=0; i < numbers.length; ++i){numbers[i] = i;} System.out.print(numbers[4];} $#4
+
+
+%&//Declaring and allocating an array of seven doubles
+%&double[] dbls = new double[7];
+$TOPdouble[] dbls = new double[7]; $#
+
+
+%&//Declare and allocate an array of five Strings on the line below. Name it "arr" and do this with only one line of code
+%&___________________
+
+$TOPString[] arr = new String[5]; $#
+
+
+
+%&//Declare and allocate an array of six integers on the line below. Name it "array" and do this with only one line of code
+%&___________________
+
+$TOPint[] array = new int[6]; $#
+
+
+
+%&int sumOfAges = 0;
+%&
+%&for(int i=0; i<ages.length; ++i)
+%&{
+%&	sumOfAges = sumOfAges + ages[i];
+%&}
+
+$TOPint sumOfAges = 0;for(int i=0; i<ages.length; ++i){sumOfAges = sumOfAges + ages[i];} $#
+
+
+%&if(y == z)
+%&{
+%&	System.out.print("Hello");
+%&}
+%&else
+%&{
+%&	System.out.print("Goodbye");
+%&}
+
+$TOPif(y == z){System.out.print("Hello");}else{System.out.print("Goodbye");} $#Goodbye
+
+
+%&Use parameters 13->19, inclusive, print number with space only if odd. Else print i+1 without a space
+%&for(int i=13; i<=19; i++)
+%&{
+%&	if(i % 2 == 1)
+%&	{
+%&		System.out.print(i + " ");
+%&	}
+%&	else
+%&	{
+%&		System.out.print(i+1);
+%&	}
+%&}
+$TOPfor(int i=13; i<=19; i++){if(i % 2 == 1){System.out.print(i + " ");}else{System.out.print(i+1);}} $#13 1515 1717 1919 
+
+
+
+
+%&//Use initializer list: {2, 32, 2}
+%&int[] numbers = _______________
+
+$TOPint[] numbers = {2, 32, 2}; $#

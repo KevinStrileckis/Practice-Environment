@@ -1,0 +1,95 @@
+**3.0**
+Inheritance
+
+$PCC0M(R)
+%&int[] numbers = new int[15];
+//Initialize with a for loop. Get all numbers 0-14
+for(int i=0; i < numbers.length; ++i)
+{
+	numbers[i] = i;
+	System.out.print(numbers[i] + " ");
+%&}
+
+$TOP[[SIC]] $#0 1 2 3 4 5 6 7 8 9 10 11 12 13 14
+
+
+%&//Declare and allocate String array on the lines below. Name it "arr" and allocate it to have 12 Strings
+___________________
+%&arr = new String[12];
+$TOPString[] arr;arr = new String[12];
+
+
+
+$PCC0M(Change)
+%&//TODO: Use initializer list, but add a 4 to the end. Do any other changes need to be made? (No)
+int[] numbers = {2, 32, 2};
+ 
+for(int i : numbers)
+{
+	System.out.print(numbers[i] + ", ");
+}
+%&System.out.print(numbers[numbers.length-1]);
+$TOPint[] numbers = {2, 32, 2, 4};for(int i : numbers){System.out.print(numbers[i] + ", ");}System.out.print(numbers[numbers.length-1]); $#2, 32, 2, 4
+
+$PCC0M(CF)
+%&//Making and using an ArrayList of integers
+import java.util.ArrayList;
+ 
+ArrayList<Integer> primes = new ArrayList<Integer>();
+primes.add(2);
+primes.add(3);
+primes.add(7);
+//Several hundred lines of code not shown
+//Whoops! I missed five. Let's add it back in before seven:
+primes.add(2, 5);
+//The above line adds in the number 5 at the index 2 (which was originally the index of 7). Now all of the elements from 7 onwards have been moved down one element (and none are deleted and size grows by one).
+%& 
+$TOP[[SIC]] $#
+
+
+
+
+$PCC0M(Change)
+%&//Making and using an ArrayList of integers
+import java.util.ArrayList;
+ 
+public class Example
+{
+  public static void main(String[] args)
+  {
+	ArrayList<Integer> primes = new ArrayList<Integer>();
+	primes.add(2);
+	primes.add(3);
+	//Several hundred lines of code not shown
+  }
+}
+//TODO: add the next three prime numbers to primes using the single argument add() method
+%& 
+
+$TOPimport java.util.ArrayList;public class Example{  public static void main(String[] args)  {	ArrayList<Integer> primes = new ArrayList<Integer>();	primes.add(2);	primes.add(3);	primes.add(5);	primes.add(7);primes.add(11);}} $#No output
+
+
+
+$PCC0M(CF)
+%&//TODO: practice declaring and initializing ArrayLists
+ArrayList<String> names = new ArrayList<String>();
+ArrayList<Integer> ages = new ArrayList<Integer>();
+%&ArrayList<Boolean> hasPaid = new ArrayList<Boolean>();
+$TOP[[SIC]]
+
+$PCC0M(CFM)
+%&//TODO: practice declaring and initializing ArrayLists with the missing portions filled in
+__________________ names = ___ _______________();
+__________________ ages = ___ ____________________
+%&__________________ hasPaid = ___ ____________________
+$TOP[[SAP]]
+
+%& 
+//Last one, kiddo
+//TODO: add to the ArrayList the Strings "hello, how are you?", "good day to you, friend", and "Ahoy me hearties!"
+ArrayList<______> greetings = new ArrayList<_____>__;
+//Add the strings on the lines below
+____________
+____________
+%&____________
+$TOP ArrayList<String> greetings = new ArrayList<String>(); greetings.add("hello, how are you?"); greetings.add("good day to you, friend"); greetings.add("Ahoy me hearties!");

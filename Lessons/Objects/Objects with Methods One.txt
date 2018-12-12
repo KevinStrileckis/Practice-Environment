@@ -1,0 +1,42 @@
+**""**2.0
+Objects with Methods One
+
+%&public class Door
+%&{
+%&	private _______ isOpen;
+%&	public Door()
+%&	{
+%&		isOpen = false;
+%&	}
+%&	public ____ openDoor()
+%&	{
+%&		isOpen = true;
+%&	}
+%&	
+%&	public void closeDoor()
+%&	{
+%&		isOpen = false;
+%&	}
+%&}
+
+$TOPpublic class Door{private boolean isOpen;public Door(){isOpen = false;}public static openDoor(){isOpen = true;}public static closeDoor(){isOpen = false;}} $#
+
+
+%&public class House
+%&{
+%&	private ______ Door frontDoor;
+%&	private static Window bigWindow;
+%&	public House()
+%&	{
+%&		frontDoor = new Door();
+%&		bigWindow = new ______();
+%&	}
+%&	public static void secureHouse()
+%&	{
+%&		frontDoor.closeDoor();
+%&		bigWindow.closeWindow();
+%&	}
+%&}
+
+$TOPpublic class House{private static Door frontDoor;private static Window bigWindow;public House(){frontDoor = new Door();bigWindow = new Window();}public static void secureHouse(){frontDoor.closeDoor();bigWindow.closeWindow();}} $#**showprev**
+

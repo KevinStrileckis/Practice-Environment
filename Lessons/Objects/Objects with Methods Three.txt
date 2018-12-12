@@ -1,0 +1,22 @@
+**""**2.0
+Objects with Methods Three
+
+
+%&public class Rock
+%&{
+%&	private double weight;
+%&	public Rock(double w)
+%&	{
+%&		weight = w;
+%&	}
+%&}
+
+$TOPpublic class House{private static Door frontDoor;private static Window bigWindow;public House(){frontDoor = new Door();bigWindow = new Window();}public static void secureHouse(){frontDoor.closeDoor();bigWindow.closeWindow();}} $#
+
+
+
+%&//Make a public class called PlayingCard. It has two private instance variables: String suit, and int value. It has no methods besides the constructor. The consturctor's header looks like this: public PlayingCard(String s, int v)
+
+$TOPpublic class PlayingCard{ private String suit; private int value; public PlayingCard(String s, int v){suit = s; value = v;}} $#**showprev**
+
+

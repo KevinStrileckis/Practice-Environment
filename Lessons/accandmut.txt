@@ -1,0 +1,20 @@
+3
+public class AccessorsAndMutators {
+2
+  private int x;
+0.5
+  
+2
+  public int getX(){
+2
+    return x;
+1
+  }
+2
+  public void setX(int newValue){
+2
+    x = newValue;
+1
+  }
+1
+}

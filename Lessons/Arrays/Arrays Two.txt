@@ -1,0 +1,42 @@
+Arrays Two
+
+%&for(int i=0; i<22; ++i)
+%&{
+%&	System.out.print("a");
+%&}
+$TOPfor(int i=0; i<22; ++i){System.out.print("a");} $#aaaaaaaaaaaaaaaaaaaaaa
+
+
+%&int[] numbers = new int[15];
+%&//Initialize with a for loop. Get all numbers 0-14
+%&for(int i=0; i < numbers.length; ++i)
+%&{
+%&	numbers[i] = i;
+%&}
+
+$TOPint[] numbers = new int[15];for(int i=0; i < numbers.length; ++i){numbers[i] = i;} $#
+
+
+%&//Declare a String array on the line below. Name it "arr"
+%&___________________
+%&//Initialize that array to a new array of twelve Strings
+%&//(note) this is called "allocating"
+%&arr = new String[12];
+
+$TOPString[] arr;arr = new String[12]; $#
+
+
+%&double[] dbls = new double[5];
+%&//On the line below, write a for loop that goes from 2 to 7, exclusive
+%&_____________________________
+%&{
+%&	dbls[i-2] = 1.7 * i;
+%&}
+$TOPdouble[] dbls = new double[5];for(int i=2; i<7; ++i){dbls[i-2] = 1.7 * i;} $#
+
+
+
+%&//Use initializer list: {2, 32, 2}
+%&int[] numbers = _______________
+
+$TOPint[] numbers = {2, 32, 2}; $#

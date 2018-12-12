@@ -1,0 +1,71 @@
+**3.0**
+Selection Sort
+
+$PCC0M(R)
+%&//First, let's review searching. Finish this binary search, assuming our query variable has already been set. Our ArrayList is named lis
+boolean flag = _____;
+int high = _____;
+int low = 0;
+int medium;
+while(low <= high && flag != true)
+{
+	medium = (high - low) / 2 + low;
+	if(lis.get(medium) _ query)
+	   low = medium + 1;
+	else if(lis.get(medium) _ query)
+	   high = medium - 1;
+	else
+	   flag = true;
+	//Each time we do this loop, check which part of the List we can ignore
+%&}
+$TOPboolean flag = false;int high = lis.size()-1;int low = 0;int medium;while(low <= high && flag != true){medium = (high - low) / 2 + low;if(lis.get(medium) < query)low = medium + 1;else if(lis.get(medium) > query)high = medium - 1;elseflag = true;}
+
+
+
+
+$PCC0M(Change)
+%&//The below is our selection sort algorithm
+//TODO: get this in your notes. You're typing it from scratch soon
+for(int j=0; j<elements.length - 1; j++)
+{
+   int minIndex = j;
+   
+   //First we search for the smallest number in the unsorted portion of our array   
+   for(int k = j + 1; k < elements.length; ++k){
+     if(elements[k] < elements[minIndex])
+       minIndex = k;
+   }
+   
+   //Perform a swap of the two elements (minimum and next unsorted place)
+   int temp = elements[j];
+   elements[j] = elements[minIndex];
+   elements[minIndex] = temp;
+}
+%& 
+$TOP for(int j=0; j<elements.length - 1; j++){int minIndex = j;for(int k = j + 1; k < elements.length; ++k){     if(elements[k] < elements[minIndex])       minIndex = k;   } int temp = elements[j]; elements[j] = elements[minIndex];   elements[minIndex] = temp;}
+
+
+
+$PCC0M(CFM)
+%&//TODO: Type the find min portion of our algorithm
+   for(int k = j + 1; k < elements.length; ++k){
+     if(elements[k] < elements[minIndex])
+     	minIndex = k;
+%&   }
+$TOPfor(int k = j + 1; k < elements.length; ++k){ if(elements[k] < elements[minIndex])minIndex = k;}
+
+%&//TODO: Type the swap portion of our algorithm
+   //Perform a swap of the two elements (minimum and next unsorted place)
+   int temp = elements[j];
+   elements[j] = elements[minIndex];
+%&   elements[minIndex] = temp;
+$TOPint temp = elements[j]; elements[j] = elements[minIndex];elements[minIndex] = temp;
+
+
+
+
+$PCC0M(Solve)
+%&//Assume that we have an array named elements
+%&//TODO: write the code to perform a selection sort on it. The swap portion of the code has been kept for you
+
+$TOPfor(int j=0; j<elements.length - 1; j++){int minIndex = j;for(int k = j + 1; k < elements.length; ++k){     if(elements[k] < elements[minIndex])       minIndex = k;   } int temp = elements[j]; elements[j] = elements[minIndex];   elements[minIndex] = temp;} $#**saveprev**

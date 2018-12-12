@@ -1,0 +1,37 @@
+Iterations Number 2
+
+%&for(int i=0; i<=12; ++i)
+%&{
+%&	System.out.print(i + " ");
+%&}
+
+$TOPfor(int i=0; i<=12; ++i){System.out.print(i + " ");} $#0 1 2 3 4 5 6 7 8 9 10 11 12
+
+
+%&for(int i=0; i<=_____; ++i)
+%&{
+%&	System.out.print(i + " ");
+%&}
+
+$TOPfor(int i=0; i<=8; ++i){System.out.print(i + " ");} $#0 1 2 3 4 5 6 7 8
+
+
+%&Use parameters 4->9, inclusive
+
+$TOPfor(int i=4; i<=9; ++i){System.out.print(i + " ");} $#4 5 6 7 8 9
+
+%&Use parameters 1->12, inclusive
+
+$TOPfor(int i=1; i<=12; ++i){System.out.print(i + " ");} $#1 2 3 4 5 6 7 8 9 10 11 12
+
+%&Use parameters 4->13, inclusive
+
+$TOPfor(int i=4; i<=13; ++i){System.out.print(i + " ");} $#4 5 6 7 8 9 10 11 12 13
+
+%&Use parameters 13->19, inclusive
+
+$TOPfor(int i=13; i<=19; ++i){System.out.print(i + " ");} $#13 14 15 16 17 18 19
+
+%&Use parameters 6->7, inclusive
+
+$TOPfor(int i=6; i<=7; ++i){System.out.print(i + " ");} $#6 7

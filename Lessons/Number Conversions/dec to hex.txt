@@ -1,0 +1,41 @@
+Conversions Number 1
+$PCC0MRandomize
+
+%&Given 15 in base 10
+$TOPF $#Convert to base 16
+
+%&Given 6 in base 10
+$TOP6 $#Convert to base 16
+
+%&Given 20 in base 10
+$TOP14 $#Convert to base 16
+
+%&Given 104 in base 10
+$TOP58 $#Convert to base 16
+
+%&Given 212 in base 10
+$TOPD4 $#Convert to base 16
+
+%&Given 348 in base 10
+$TOP15C $#Convert to base 16
+
+%&Given 126 in base 10
+$TOP7E $#Convert to base 16
+
+%&Given 26 in base 10
+$TOP1A $#Convert to base 16
+
+%&Given 16 in base 10
+$TOP10 $#Convert to base 16
+
+%&Given 256 in base 10
+$TOP100 $#Convert to base 16
+
+%&Given 512 in base 10
+$TOP200 $#Convert to base 16
+
+%&Given 1024 in base 10
+$TOP400 $#Convert to base 16
+
+%&Given 100 in base 10
+$TOP64 $#Convert to base 16

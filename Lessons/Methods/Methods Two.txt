@@ -1,0 +1,30 @@
+Methods Two
+
+%&public static void main(String[] args)
+%&{
+%&	printX();
+%&}
+%&public void printX()
+%&{
+%&	System.out.println("X");
+%&}
+
+$TOPpublic static void main(String[] args){printX();}public void printX(){System.out.println("X");} $#X
+
+
+%&public static void main(String[] args)
+%&{
+%&	printXYX();
+%&}
+%&public void printXYX()
+%&{
+%&	System.out.print("X");
+%&	printY();
+%&	System.out.print("X");
+%&}
+%&public void printY()
+%&{
+%&	System.out.println("Y");
+%&}
+
+$TOPpublic static void main(String[] args){printXYX();}public void printXYX(){System.out.print("X");printY();printY();System.out.print("X");}public void printY(){System.out.println("Y");} $#XYX

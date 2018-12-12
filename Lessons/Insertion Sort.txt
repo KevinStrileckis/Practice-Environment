@@ -1,0 +1,50 @@
+**3.0**
+Insertion Sort
+
+
+
+
+$PCC0M(Change)
+%&//The below is our insertion sort algorithm
+//TODO: get this in your notes. You're typing it from scratch soon
+  
+for(int j=1; j< elements.length; j++)
+{
+   //Look at the next unsorted element
+   int temp = elements[j];
+
+   //Find the correct NEW index for this element
+   int possibleIndex = j;
+   while(possibleIndex > 0 && temp < elements[possibleIndex - 1])
+   {
+     elements[possibleIndex] = elements[possibleIndex - 1];
+     possibleIndex--;
+   }
+   elements[possibleIndex] = temp;
+}
+%& 
+$TOP for(int j=1; j< elements.length; j++){   int temp = elements[j];   int possibleIndex = j;   while(possibleIndex > 0 && temp < elements[possibleIndex - 1])   {     elements[possibleIndex] = elements[possibleIndex - 1];     possibleIndex--;   }   elements[possibleIndex] = temp;}
+
+
+
+$PCC0M(CFM)
+%&//TODO: Type the search portion of our algorithm
+   //Find the correct NEW index for this element
+   int possibleIndex = j;
+   while(possibleIndex > 0 && temp < elements[possibleIndex - 1])
+   {
+     elements[possibleIndex] = elements[possibleIndex - 1];
+     possibleIndex--;
+   }
+   elements[possibleIndex] = temp;
+%&   
+$TOP   int possibleIndex = j;while(possibleIndex > 0 && temp < elements[possibleIndex - 1]) {     elements[possibleIndex] = elements[possibleIndex - 1];  possibleIndex--; } elements[possibleIndex] = temp;
+
+
+
+
+$PCC0M(Solve)
+%&//Assume that we have an array named elements
+%&//TODO: write the code to perform an insertion sort on it. A portion of the code has been kept for you
+
+$TOPfor(int j=1; j< elements.length; j++){   int temp = elements[j];   int possibleIndex = j;   while(possibleIndex > 0 && temp < elements[possibleIndex - 1])   {     elements[possibleIndex] = elements[possibleIndex - 1];     possibleIndex--;   }   elements[possibleIndex] = temp;} $#**saveprev**

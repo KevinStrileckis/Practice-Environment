@@ -1,0 +1,58 @@
+Arrays One
+
+%&//You do not need to add these comments to your code
+%&
+%&//Declare an integer array
+%&int[] arr;
+%&
+%&//Initialize that array to a new array of ten integers
+%&arr = new int[10];
+
+$TOPint[] arr;arr = new int[10]; $#
+
+
+
+%&//Declare a String array
+%&String[] arr;
+%&//Initialize that array to a new array of twelve Strings
+%&arr = new String[12];
+
+$TOPString[] arr;arr = new String[12]; $#
+
+
+%&//Hello
+%&String[] arr = new String[4];
+%&arr[0] = "Hey!";
+%&arr[1] = "I";
+%&arr[2] = "just";
+%&arr[3] = "met you";
+
+$TOPString[] arr = new String[4];arr[0] = "Hey!";arr[1] = "I";arr[2] = "just";arr[3] = "met you"; $# 
+
+
+
+%&//Use an initializer list: {2, 32, 2}
+%&//Then print our array
+%&int[] numbers = {2, 32, 2};
+%&for(int i=0; i < numbers.length; ++i)
+%&{
+%&	System.out.print(numbers[i] + " ");
+%&}
+
+$TOPint[] numbers = {2, 32, 2};for(int i=0; i < numbers.length; ++i){System.out.print(numbers[i] + " ");} $#2 32 2
+
+
+
+%&int[] numbers = new int[15];
+%&//Initialize with a for loop. Get all numbers 0-14, times 2
+%&for(int i=0; i < numbers.length; ++i)
+%&{
+%&	numbers[i] = i * 2;
+%&}
+%&//Print out the array with a for loop
+%&for(int i=0; i < numbers.length; ++i)
+%&{
+%&	System.out.print(numbers[i] + " ");
+%&}
+
+$TOPint[] numbers = new int[15];for(int i=0; i < numbers.length; ++i){numbers[i] = i * 2;}for(int i=0; i < numbers.length; ++i){System.out.print(numbers[i] + " ");} $#0 2 4 6 8 10 12 14 16 18 20 22 24 26 28 

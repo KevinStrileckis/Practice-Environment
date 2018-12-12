@@ -1,0 +1,211 @@
+**3.0**
+Inheritance
+
+$PCC0M(R)
+%&public class BTR02
+%&{
+%&   public static void main(String[] args)
+%&   {
+%&	  System.out.print("Hello world");
+%&	  //We could have used "println" to
+%&	  //  print with a newline
+%&   }
+%&}
+$TOPpublic class BTR02{public static void main(String[] args){System.out.print("Hello world");}} $#Hello world
+
+
+%&int[] n = new int[3];
+%&//Initialize the array one at a time
+%&n[0] = 0;
+%&n[1] = 1;
+%&n[2] = 2;
+$TOPint[] n = new int[3];n[0] = 0;n[1] = 1;n[2] = 2;
+
+
+%&for(int i=4; i<8; ++i)
+%&{
+%&	System.out.print(i + " ");
+%&}
+
+$TOPfor(int i=4; i<8; ++i){System.out.print(i + " ");} $#4 5 6 7
+
+%&for(int i=___; i<20; ++i)
+%&{
+%&	System.out.print(i + " ");
+%&}
+
+$TOPfor(int i=10; i<20; ++i){System.out.print(i + " ");} $#10 11 12 13 14 15 16 17 18 19
+
+
+
+%&public static void main(String[] args)
+%&{
+%&   printXYX();
+%&}
+%&public void printXYX()
+%&{
+%&   System.out.print("XY");
+%&   System.out.print("X");
+%&}
+
+$TOPpublic static void main(String[] args){printXYX();}public void printXYX(){System.out.print("XY");System.out.print("X");} $#XYX
+
+
+
+
+
+
+$PCC0M(CF)
+%&//Here is an example of polymorphism
+%&public class Sardine extends Fish{
+%&   //From the Fish class, we inherited these: variables length, name, and weight; methods swim and breathe.
+%&   //As such, our fish will use the super constructor in its own constructor below
+%&   public Sardine(double l, double w, String n){
+%&   	super(l, w, n);
+%&   }
+%&	
+%&}
+
+$TOPpublic class Sardine extends Fish{publicSardine(double l, double w, String n){super(l,w,n);}} $#Inheritance is the action of inheriting the variables and methods from another class. Polymorphism - the state of being two classes at once
+
+%&//Interfaces are like normal classes, but a little different
+%&//Keep in mind that this is not the same Fish class that Sardine inherited from
+%&public interface Fish{
+%&	public void swim();
+%&	public void breathe();
+%&	//public void sing(); //removed for silliness
+%&}
+%&//TODO: Write the description of interfaces that is in the output box at the end of your code
+%&//TODO: that description must be prefaced with /*
+%&//TODO: that description must be concluded with */
+
+$TOPpublic interface Fish{public void swim();public void breathe();} /*Interfaces are basically parent classes that do not define any methods or variables. They may declare methods, however.*/ $#Interfaces are basically parent classes that do not define any methods or variables. They may declare methods, however.
+
+
+
+
+$PCC0M(Change)
+%&public class Mackerel extends Fish{
+%&	//From the Fish class, we inherited these: variables length, name, and weight; methods swim and breathe.
+%&	//But the term "mackerel" refers to several kinds of pelagic fish, so...
+%&	private String family;
+%&	//As such, our fish will use the super constructor in its own constructor below
+%&	public Mackerel(double l, double w, String n, String f){
+%&		super(l, w, n);
+%&		family = f;
+%&	}
+%&}
+%&//TODO: change class from being a mackerel, into being a Tuna (caps matter).
+%&//TODO: And don't forget to fix the contructor
+
+$TOPpublic class _X_X_ extends Fish{private String family;public _X_X_(double l, double w, String n, String f){super(l, w, n);family = f;}	}$#Inheritance is the action of inheriting the variables and methods from another class. Polymorphism - the state of being two classes at once _X__X_Tuna
+
+
+
+%&//TODO: Change the method "sing()" to "singWell()"
+%&
+%&
+%&//Interfaces are like normal classes, but a little different
+%&//This one could be used as blueprints for several kinds of robots
+%&public interface Robot{
+%&   //Classes that implement Robot one CAN add on other speech methods, but MUST define this one
+%&   public void basicSpeak();
+%&   //Other methods which MUST be defined by classes that implement Robot
+%&   public void move(); 
+%&   public String produceAThought();
+%&   public void sing();
+%&	//"Daisy, Daisy, give me your answer do..."
+%&}
+%&//We had a problem... they don't sing well. 
+
+$TOPpublic interface Robot{public void basicSpeak();public void move(); public String produceAThought();public void _X_X_(); } $#Interfaces are basically parent classes that DO NOT DEFINE any methods or variables. They may DECLARE methods, however. _X__X_singWell
+
+$PCC0M(CF)
+%&//TODO: practice writing interface headers by copying the lines below:
+%&public interface Robot
+%&public interface Driveable
+%&public interface Movable
+%&public interface Tool
+%&public interface KitchenKnife
+$TOPpublic interface Robotpublic interface Driveablepublic interface Movablepublic interface Toolpublic interface KitchenKnife
+
+$PCC0M(CFM)
+%&//TODO: practice writing interface headers by copying the lines below WITH the missing portions included:
+%&______ _________ Robot
+%&______ _________ Driveable
+%&______ _________ Movable
+%&______ _________ Tool
+%&______ _________ KitchenKnife
+$TOPpublic interface Robotpublic interface Driveablepublic interface Movablepublic interface Toolpublic interface KitchenKnife
+
+$PCC0M(CF)
+%&//TODO: practice writing classes that implement interfaces by copying the lines below:
+%&public class Droid implements Robot
+%&public class Car implements Driveable
+%&public class Truck implements Driveable
+%&public class Hammer implements Tool
+%&public class Screwdriver implements Tool
+$TOPpublic class Droid implements Robotpublic class Car implements Driveablepublic class Truck implements Driveablepublic class Hammer implements Toolpublic class Screwdriver implements Tool
+
+$PCC0M(CFM)
+%&//TODO: practice writing classes that implement interfaces by copying the lines below:
+%&______ _____ Droid __________ Robot
+%&______ _____ Car __________ Driveable
+%&______ _____ Truck __________ Driveable
+%&______ _____ Hammer __________ Tool
+%&______ _____ Screwdriver __________ Tool
+$TOPpublic class Droid implements Robotpublic class Car implements Driveablepublic class Truck implements Driveablepublic class Hammer implements Toolpublic class Screwdriver implements Tool
+
+
+
+$PCC0M(Change)
+%&//TODO: Change this class so that it extends Fish and implements Robot. It is done like how it sounds
+%&
+%&//Robot fish
+%&public class RobotMackerel implements Robot{
+%&   private int x, y, xspeed, yspeed;
+%&	
+%&   //Defining implemented methods
+%&   public void basicSpeak(){
+%&   	System.out.println("blub blub");
+%&   }
+%&   public void move(){
+%&   	x += xspeed;
+%&   	y+=yspeed;
+%&   }
+%&   public String produceAThought(){
+%&   	return "according to all known laws of aviation";
+%&   }
+%&   public void singWell(){ System.out.println("");}
+%&}
+%&//DAGNABBIT! SO MUCH WORK. I know, I know, I'm make such a big todo about nothing.
+$TOPpublic class RobotMackerel extends Fish implements Robot{   private int x, y, xspeed, yspeed;public void basicSpeak(){ System.out.println("blub blub");}  public void move(){x += xspeed; y+=yspeed;} public String produceAThought(){return "according to all known laws of aviation";}public void singWell(){ System.out.println("");}} $#A class can inherit methods and variables from a parent WHILE ALSO implementing an interface
+
+
+$PCC0M(CFM)
+%&//Produce a class that is named Fisherperson
+%&//This class:
+%&//	inherits from a class named Human
+%&//	implements from an interface named Employee
+%&//	has a constructor that intializes all of Human's variables
+%&//	Defines all of Employee's declared methods
+%&//Sound good? Well, I'll give you some code for it
+%&public class Fisherperson *X*X*extends Human implements Employee
+%&{
+%&   private int fishCaughtDuringCareer;
+%&   
+%&   public Fisherperson(int timeLeftInHours, double weight, String name){
+%&      super(timeLeftInHours,*X*X*weight, name);
+%&   }
+%&   
+%&   //The below method was declared in interface Employee (though not defined)
+%&   public void work (int hrs){
+%&      super.subtractTime( hrs);
+%&   }
+%&   //Other methods written but not shown
+%&}
+$TOPpublic class Fisherperson extends Human implements  Employee{ public Fisherperson(int timeLeftInHours, double weight, String name){super(timeLeftInHours, weight, name);  }public void work(int hrs){timeLeftInHours -= hrs;}} $#You are not be able to see it, but Employee has this code written in it: public void work(int hrs);
+
+
+%&//Lastly, read a bit about abstract classes, when finished, press the "Check Work" button
+$TOP $#

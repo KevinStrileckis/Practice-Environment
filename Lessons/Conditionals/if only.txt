@@ -1,0 +1,33 @@
+Conditionals 1
+
+%&if(x == y)
+%&{
+%&}
+$TOPif(x==y){} $#Statement executes if x equals y
+
+%&if(x != y)
+%&{
+%&}
+$TOPif(x!=y){} $#Statement executes if x does not equal y
+
+%&if(y != y)
+%&{
+%&}
+$TOPif(y!=y){} $#Statement never executes because y equals itself
+
+
+%&if(x == y)
+%&{
+%&	if(x > z)
+%&	{
+%&	}
+%&}
+$TOPif(x==y){if(x>z){}} $#This nested statement executes if x equals y and x is greater than z
+
+%&if(x != y)
+%&{
+%&	if(x < z)
+%&	{
+%&	}
+%&}
+$TOPif(x!=y){if(x<z){}} $#This nested statement executes if x does not equaly and x is less than z
